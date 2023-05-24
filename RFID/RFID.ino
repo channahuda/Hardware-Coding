@@ -10,8 +10,8 @@
 #include <HTTPClient.h>
 
 
-const char* ssid = "Galaxy S9+35d5";
-const char* password = "ezgi1229";
+const char* ssid = "";
+const char* password = "";
 
 const char* serverUrl = "http://3.106.170.176:3000/verifytagid";
 
@@ -88,32 +88,7 @@ void loop() {
     String responseBody = http.getString();
     Serial.println(responseBody);
     http.end();
-    // http.begin(wifiClient, serverUrl);
-    //   http.addHeader("Content-Type", "application/x-www-form-urlencoded");
-    // http.addHeader("Content-Type", "application/json");
-    // http.addHeader("Accept", "*/*");
-    // http.addHeader("Accept-Encoding", "gzip, deflate, br");
-    // http.addHeader("Connection", "keep-alive");
-    // http.addHeader("User-Agent", "PostmanRuntime/7.31.3");
 
-    // http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS, 10);
-    
-    // http.setFollowRedirectsLimit(10);
-    // http.setRedirect(true);
-    // http.setFollowRedirects(followRedirects_t follow);
-    // http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
-  // http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
-    
-    // int httpResponseCode = http.GET();
-
-    
-    // http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
-    // http.setFollowRedirects(HTTPC_FORCE_FOLLOW_REDIRECTS);
-    // String responseBody = http.getString();
-    // Serial.print("HTTP Response code: ");
-    // Serial.println(httpResponseCode);
-    // Serial.println(responseBody);
-   // http.end();
   }
   delay(10000);
 }

@@ -6,10 +6,8 @@
 #include <ArduinoJson.h>
 #include <HTTPClient.h>
 
-const char* ssid = "Galaxy S9+35d5";
-const char* password = "ezgi1229";
-// const char* ssid = "RoyalNet_Mumtaz";
-// const char* password = "Mirokhan997";
+const char* ssid = "";
+const char* password = "";
 const char* serverUrl = "http://3.106.170.176:3000/addTempWeight";
 
 WiFiClient wifiClient;
